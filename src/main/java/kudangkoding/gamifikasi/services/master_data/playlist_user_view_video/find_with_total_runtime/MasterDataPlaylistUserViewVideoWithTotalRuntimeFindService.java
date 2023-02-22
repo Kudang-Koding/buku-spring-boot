@@ -1,0 +1,11 @@
+package kudangkoding.gamifikasi.services.master_data.playlist_user_view_video.find_with_total_runtime;
+
+import kudangkoding.gamifikasi.dto.models.VwPlaylistUserViewVideoWithTotalRuntimeDto;
+import kudangkoding.gamifikasi.dto.queryfilters.PlaylistUserViewVideoWithTotalRuntimeQueryFilter;
+import org.springframework.data.domain.Page;
+
+public interface MasterDataPlaylistUserViewVideoWithTotalRuntimeFindService {
+
+    Page<VwPlaylistUserViewVideoWithTotalRuntimeDto> call(PlaylistUserViewVideoWithTotalRuntimeQueryFilter qf);
+
+}
